@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.min.css}" />
+<link rel="stylesheet" th:href="@{/css/styles.css}" />
+<title th:text="${title}"></title>
+</head>
+<body>
+<p> 
+	<span th:text="${hello}"></span>
+	Full Name: <span th:text="${person.firstName}"></span>
+	<span th:text="${person.lastName}"></span> <br />
+	Age: <span th:text="${person.age}"></span> <br />
+	EDU: <span th:text="${person.eduName}"></span> <br />
+	EndedYear: <span th:text="${person.endedYear}"></span>
+</p>
+</body>
+</html>

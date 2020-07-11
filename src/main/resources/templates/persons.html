@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.min.css}" />
+<link rel="stylesheet" th:href="@{/css/styles.css}" />
+<title>All Person | Spring boot</title>
+</head>
+<body>
+<p> 
+	<h1>Person Entries</h1>
+    <div th:each="person : *{entries}">
+        <div th:text="${person}"></div>
+    </div>
+</p>
+</body>
+</html>
