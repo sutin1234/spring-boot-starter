@@ -3,9 +3,11 @@ p {
 }
 ul li{
 	padding: 5px;
+	list-style: none;
 	
 }
 ul li a {
+	font-weight: bold;
 	padding: 5px;
 	text-decoration: none;
 }

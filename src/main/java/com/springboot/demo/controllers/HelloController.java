@@ -17,7 +17,7 @@ public class HelloController {
 
 	@GetMapping("/")
 	public String index() {
-		return "index";
+		return "layout";
 	}
 
 	@GetMapping("/home")
@@ -29,6 +29,7 @@ public class HelloController {
 
 	@GetMapping("/person")
 	public String person(ModelMap model) {
+
 		String title = "Person Page | Spring Boot WebApplication";
 		String hello = "Hello Person: ";
 		model.addAttribute("title", title);
